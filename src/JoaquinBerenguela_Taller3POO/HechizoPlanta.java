@@ -25,4 +25,9 @@ public class HechizoPlanta extends Hechizo {
     public void setCantPlantas(int cantPlantas) {
         this.cantPlantas = cantPlantas;
     }
+
+	@Override
+	public double calcularPuntuacion() {
+		return getDaño() + (this.duracionStun * this.cantPlantas);
+	}
 }

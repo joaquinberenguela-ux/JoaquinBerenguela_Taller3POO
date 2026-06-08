@@ -1,6 +1,6 @@
 package JoaquinBerenguela_Taller3POO;
 
-public abstract class Hechizo {
+public abstract class Hechizo implements PuntuacionHechizo {
     private String nombre;
     private int daño;
 

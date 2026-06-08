@@ -25,4 +25,9 @@ public class HechizoAgua extends Hechizo {
     public void setPresionDelAgua(int presionDelAgua) {
         this.presionDelAgua = presionDelAgua;
     }
+
+	@Override
+	public double calcularPuntuacion() {
+		return (getDaño() + this.cantidadHeal + this.presionDelAgua) * 2;
+	}
 }

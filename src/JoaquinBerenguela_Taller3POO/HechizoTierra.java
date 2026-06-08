@@ -15,4 +15,9 @@ public class HechizoTierra extends Hechizo {
     public void setMejoraDefensa(int mejoraDefensa) {
         this.mejoraDefensa = mejoraDefensa;
     }
+
+    @Override
+    public double calcularPuntuacion() {
+        return (getDaño() * this.mejoraDefensa) / 2; 
+    }
 }
